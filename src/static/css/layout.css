@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+.body {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  box-sizing: border-box;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: flex;
+  text-decoration: none;
+}
+
+#menu {
+  background-color: #111827;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+#menu .logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 30px 0 0 30px;
+}
+
+#menu .logo h2 {
+  font-weight: bold;
+}
+
+#menu .logo img {
+  width: 50px;
+  margin-right: 15px;
+}
+
+#menu .items {
+  margin-top: 40px;
+}
+
+#menu .items li {
+  list-style: none;
+  padding: 15px 0;
+  transition: 0.3s ease;
+}
+
+
+#menu .items li:hover {
+  background: #253047;
+  cursor: pointer;
+}
+
+
+#menu .items li i {
+  color: rgb(134, 141, 151);
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 10px 0 25px;
+}
+
+#menu .items li:hover i,
+#menu .items li #a {
+  color: #f3f4f6;
+}
+
+#menu .items li #a {
+  text-decoration: none;
+  color: rgb(134, 141, 151);
+  font-weight: 300px;
+  transition: 0.3s ease;
+}
+
+
+.drop-dn{
+  text-decoration: none !important;
+  color: rgb(134, 141, 151) !important;
+  font-weight: 300px !important;
+  transition: 0.3s ease !important;
+}
+
+.drop-dn-item{
+  margin-top: 20px !important;
+}
+
+.drop-dn-item li{
+  list-style: none !important;
+  padding: 15px 0 !important;
+  transition: 0.3s ease !important;
+}
+
+
+.drop-dn-item li:hover {
+  background: #1a2638 !important;
+  cursor: pointer !important ;
+}
+
+.body #interface {
+  width: calc(100% - 300px);
+  margin-left: 300px;
+  position: relative;
+}
+
+
+#interface .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 30px;
+  border-bottom: 3px solid #594ef7;
+  position: fixed;
+  width: calc(100% - 300px);
+}
+
+#interface .navigation .search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid #d7dbe6;
+  border-radius: 4px;
+}
+
+#interface .navigation .search input {
+  border: none !important;
+  outline: none;
+  font-size: 14px;
+}
+
+#interface .navigation .search i {
+  margin-right: 14px;
+}
+
+#interface .navigation .profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#interface .navigation .profile i {
+  margin-right: 20px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+#interface .navigation .profile img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.n1 {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.n1 .menu-btn {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.n1 .menubtn {
+  border: none;
+}
+
+.n1 #menu-btn {
+  display: none;
+  color: #2b2b2b;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#interface .content {
+  padding: 80px 30px 20px 30px;
+}
+
+@media (max-width: 769px) {
+  #menu {
+    width: 270px;
+    position: fixed;
+    left: -270px;
+    transition: 0.3s ease;
+  }
+  #menu.active {
+    left: 0px;
+  }
+  .body #interface {
+    width: 100%;
+    margin-left: 0px;
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+  #menu.active ~ #interface {
+    width: calc(100% - 270px);
+    margin-left: 270px;
+    transition: 0.3s ease;
+  }
+  .n1 #menu-btn {
+    display: initial;
+  }
+
+  #interface .navigation {
+    width: 100%;
+  }
+  #interface .content {
+    padding: 30px 30px 0 30px;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 477px) {
+  #interface .navigation {
+    padding: 15px;
+  }
+
+  #interface .navigation .search input {
+    width: 150px;
+  }
+
+  .content {
+    padding: 15px 15px 0 15px;
+  }
+}
+
+.footer {
+  height: 50px;
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 2000px;
+  bottom: 0;
+}
+
+.footer p {
+  padding: 10px;
+}

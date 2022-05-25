@@ -1,0 +1,12 @@
+
+
+// IMPORTANT
+# create custom validation for aadhar No for 'owner ship is known' type of useres.
+// LAST
+# registration : refresh form after successful registration
+# create serverside validation if possible
+# optimize file upload code 
+# add official vehicle proper updation code
+# add date validation on vehicle VechicleRegistrationContent
+# add role switch option in user management, add foregot password option
+# functionality to add user in future for a non registered vehicle
